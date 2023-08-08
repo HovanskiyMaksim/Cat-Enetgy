@@ -1,0 +1,492 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    font-family: 'Roboto';
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul, ul li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+/* Верстка сайта */
+
+/* header */
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.header_list{
+    display: flex;
+    gap: 33px;
+}
+
+.header_link{
+    color: #111;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header_item:nth-child(2){
+    border-bottom: 2px solid #68B738;
+}
+/* Main */
+
+.main_title{
+    color: #000;
+    font-family: Oswald;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; 
+}
+
+.main_content{
+    margin-top: 74px;
+}
+
+.cotalog_goods{
+    display: flex;
+    gap: 78px;
+    flex-wrap: wrap;
+}
+
+.cotalog_product_card{
+    background: var(--basic-grey, #F2F2F2);
+    width: 245px;
+    height: 431px;
+    justify-content: center;
+    margin-top: 143px;
+    flex-direction: column;
+}
+
+
+
+.product_card_image_small{
+    width: 161px;
+    height: 172px;
+    margin-top: -52px;
+}
+
+.product_card_image_big{
+    margin-top: -80px;
+    width: 172px;
+    height: 201.939px;
+}
+
+.cotalog_card_img{
+    display: flex;
+    justify-content: center;
+}
+
+.cotalog_card_title{
+    text-align: center;
+    margin-top: 42px;
+    color: var(--special-dark-grey-2, #222);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 21px; /* 105% */
+    text-transform: uppercase;
+}
+
+.cotalog_card_weight,.cotalog_card_taste,.cotalog_card_price{
+    height:25.36px;
+    width: 169px;
+    border-bottom: 1px #CDCDCD solid ;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 38px;
+    margin-top: 20.81px;
+}
+
+.cotalog_product_card_show{
+    border: 2px solid #F2F2F2;
+    width: 245px;
+    height: 430px;
+    margin-top: 143px;
+}
+
+.cotalog_product_card_show_plus{
+    margin-left: 92px;
+    margin-top: 51px;
+    cursor: pointer;
+}
+
+.cotalog_product_card_show_title{
+    text-align: center;
+    margin-top: 49px;
+    color: #111;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 110% */
+    text-transform: uppercase;
+}
+
+.cotalog_product_card_show_subtitle{
+    color: var(--special-dark-grey, #444);
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+    margin-top: 23px;
+}
+
+
+.cotalog_product_card_show_button{
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 169px;
+    height: 40px;
+    margin: 0 auto;
+    background: var(--basic-grey, #F2F2F2);
+    margin-top: 87px;
+    cursor: pointer;
+}
+
+/* additionally */
+
+.additionally_products{
+    margin-top: 75px;
+}
+
+.additionally_products_title{
+    color: #000;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.additionally_products_left_right_blocks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.additionally_products_right_block{
+    height: 288px;
+    width: 895px;
+    margin-top: 81px;
+    border-top: 1px solid #CDCDCD;
+}
+
+.additionally_products_right_block_product{
+    display: flex;
+    align-items: center;
+    height: 72px;
+    justify-content: space-between;
+    border-bottom: 1px solid #CDCDCD;
+}
+.additionally_products_right_block_product_name{
+    color: var(--special-dark-grey-2, #222);
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    text-transform: uppercase;
+    width: 161px;
+}
+
+.additionally_products_right_block_product_volume{
+    color: var(--special-dark-grey, #444);
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    width: 135px;
+}
+
+.additionally_products_right_block_product_price{
+    color: var(--special-dark-grey, #444);
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.additionally_products_right_block_product_button{
+    height: 40px;
+    width: 244px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--basic-green, #68B738);
+    color: var(--basic-white, #FFF);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+
+}
+
+.additionally_products_left_block{
+    width: 245px;
+    height: 289px;
+    background-image: url(../img/cat\ in\ the\ washer.png);
+    margin-top: 91px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.additionally_products_left_block img{
+    width: 80px;
+    height: 82.571px;
+    margin-top: 55px;
+    margin-left: 84px;
+    margin-bottom: 46px;
+    flex-direction: column;
+}
+
+.additionally_products_left_block p{
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    flex-direction: column;
+    margin-bottom: 42px;
+}
+
+.location_info{
+    width: 570px;
+    height: 201px;
+    background: #000;
+    padding-left: 76px;
+    padding-top: 66px;
+    display: flex;
+    margin-top: -400px;
+    z-index: 999;
+}
+
+.loc_info_title{
+    color: #111;
+font-family: Oswald;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 105% */
+text-transform: uppercase;
+}
+
+.loc_info_right{
+    margin-top: -19px;
+}
+
+.loc_info_right p{
+    color: var(--special-dark-grey, #444);
+font-family: Arial;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+margin-left: 87px;
+margin-top: 19px;
+}
+
+.footer{
+    width: 100%;
+    height: 149px;
+    background: #F2F2F2;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 63px;
+
+}
+
+.footer_socios a{
+    gap: 21px;
+    display: flex;
+}
+
+/* burger-menu *//* burger-menu *//* burger-menu */
+
+.open{
+    display: block !important;
+}
+
+.burger{
+    width: 30px;
+    height: 18px;
+    position: relative;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 50;
+}
+
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #000;
+}
+
+.burger::before,.burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before{ 
+    top: 0;
+}
+.burger::after{ 
+    bottom: 0;
+}
+
+.burger.active::before{
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.burger.active::after{
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.burger.active span{
+    display: none;
+}
+
+.br{
+    display: none;
+}
+
+@media(max-width:1218px){
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .header_item:nth-child(2){
+        border-bottom: 0;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    .header_navigation{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: orange;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .header_list{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .additionally_products_left_block{
+        margin-left: 0;
+        margin-top: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+
+    .additionally_products_left_block img{
+        display: inline;
+    }
+
+    .additionally_products_left_block p{
+        text-align: start;
+        display: inline;
+        margin-left: 423px;
+        margin-top: -120px;
+
+    }
+
+    .additionally_products_right_block_product{
+        height: 139px;
+    }
+
+
+
+}
+
+@media(max-width:890px){
+    .container{
+        width: 580px;
+        margin: 0 auto;
+    }
+
+    .additionally_products_right_block_product_volume{
+        margin-right: 10px;
+    }
+
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
